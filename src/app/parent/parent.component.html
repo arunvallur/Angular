@@ -1,0 +1,22 @@
+<div class="parentblock">
+    <div class="row">
+        <app-child [changeValue]="onchangeChildValue" (childevent)="ChildEventToParent()"></app-child>
+        <app-child2 [changeValue1]="onchangeChild2Value" (childevent2)="Child2EventToParent()"></app-child2>
+    </div>
+    <div>
+        <div>
+            <button class="btn btn-primary paddingright" (click)="child()" type="submit">child</button>
+            <button class="btn btn-primary paddingright" (click)="child2()" type="submit">child2</button>
+            <button class="btn btn-primary paddingright" (click)="Test()" type="submit">Test</button>
+        </div>
+        <div>
+            <button class="btn btn-primary paddingright"   (click)="Onchangechild()" type="button">Onchange_Child</button>
+            <button class="btn btn-primary paddingright" (click)="Onchangechild2()" type="button">Onchange_child2</button>
+        </div>
+    </div>
+    <div style="font-size: medium;float: right;font-weight: bold;margin-top: -70px;margin-left: 50px;">
+        Parent Click Event : {{parentvalue}}<br>
+        Child Event : {{childtoparent}}<br>
+        Child2 Event : {{child2toparent}}
+    </div>
+</div>

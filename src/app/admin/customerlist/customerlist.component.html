@@ -1,0 +1,16 @@
+<!-- <p *ngFor="let i of result">
+    {{i.accountNumber}}
+</p> -->
+
+<table style="width:100%">
+    <tr>
+        <th>storeId</th>
+        <th>accountNumber</th>
+        <th>modifiedDate</th>
+    </tr>
+    <tr *ngFor="let i of result">
+        <td>{{i.storeId}}</td>
+        <td>{{i.accountNumber}}</td>
+        <td>{{i.modifiedDate}}</td>
+    </tr>
+</table>

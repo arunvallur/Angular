@@ -1,0 +1,15 @@
+.parentblock {
+  float: left;
+    width: 280px;
+    padding: 12px;
+    border: 5px solid gray;
+    margin: 0;
+    height: 200px;
+    margin-top: 100px;
+  }
+.paddingright {
+    margin-left: 30px;
+}
+.paddingright {
+  margin-left: 30px;
+}
